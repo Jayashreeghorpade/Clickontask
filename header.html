@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="header.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="header_main">
+
+        <ul class="left">
+            <div class="home">
+                <li onclick="show()">Home</li>
+                <ul class="sub_Home">
+                    <li>Home1</li>
+                    <li>Home2</li>
+                    <li>Home3</li>
+                </ul>
+            </div>
+            <div class="service">
+                <li onclick="showon()">Service</li>
+                <ul class="sub_service">
+                    <li>service1</li>
+                    <li>service2</li>
+                    <li>service3</li>
+                </ul>
+            </div>
+            <div class="contact">
+                <li onclick="onshow()">Contact</li>
+                <ul class="sub_contact">
+                    <li>Contact1</li>
+                    <li>Contact2</li>
+                    <li>Contact3</li>
+
+                </ul>
+            </div>
+        </ul>
+
+        <div class="center">
+            Jayashree
+        </div>
+        <div class="right">
+            <i class="fa-solid fa-magnifying-glass"></i>
+            <div class="icon"><i class="fa-sharp fa-solid fa-bars"></i>
+                <div class="card">
+                    <h2>Person 1</h2>
+                    <i id="first" class="fa-solid fa-pencil"></i>
+                    <img src="https://images.pexels.com/photos/674010/pexels-photo-674010.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
+                        alt="">
+                     <div class="para">
+                    <h4>Jaya Ghorpade</h4>
+                    <p>jayaghorpade1993@gmail.com</p></div>
+                    <div class="keys">
+                        <i class="fa-solid fa-keyboard"></i>
+                        <i class="fa-solid fa-location-dot"></i>
+                        <i class="fa-solid fa-bag-shopping"></i>
+                    </div>
+                   
+                </div>
+            </div>
+        </div>
+    </div>
+    <hr>
+</body>
+<script>
+    function show() {
+
+        if (document.querySelector(".sub_Home").style.display == "none") {
+            document.querySelector(".sub_Home").style.display = "block"
+        } else {
+
+            document.querySelector(".sub_Home").style.display = "none"
+
+        }
+
+    }
+    function showon() {
+
+        if (document.querySelector(".sub_service").style.display == "none") {
+            document.querySelector(".sub_service").style.display = "block"
+        } else {
+
+            document.querySelector(".sub_service").style.display = "none"
+
+        }
+
+    }
+    function onshow() {
+        if (document.querySelector(".sub_contact").style.display == "none") {
+            document.querySelector(".sub_contact").style.display = "block"
+        } else {
+            document.querySelector(".sub_contact").style.display = "none"
+        }
+    }
+</script>
+
+</html>

@@ -1,0 +1,225 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.header_main {
+    height: 80px;
+    background-color: rgb(226, 221, 230);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 40px;
+   
+}
+
+.left {
+    display: flex;
+    list-style: none;
+    gap: 40px;
+    font-size: 18px;
+
+}
+
+.left li {
+    cursor: pointer;
+}
+
+.center {
+    font-size: 22px;
+    font-weight: 600;
+    position: absolute;
+   
+    left: 50%;
+
+    transform: translateX(-50%);
+}
+.right{
+    display: flex;
+    flex-direction: row;
+}
+
+.right i {
+    padding: 10px 10px;
+    display: flex;
+    flex-direction: row;
+    
+    transition: ease-in-out;
+
+}
+
+.right i:hover {
+    transform: scale(1.2);
+}
+
+.fa-sharp:hover {
+    background-color: rgb(226, 224, 224);
+    border-radius: 50px;
+    color: blue;
+}
+
+.home {
+    position: relative;
+}
+
+.sub_Home {
+    position: absolute;
+    list-style: none;
+
+    top: 50px;
+    height: fit-content;
+    width: 100px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    padding: 10px;
+    border-top: 3px solid rgb(159, 159, 167);
+    border-radius: 10px;
+    display: none;
+
+}
+
+.sub_Home li {
+    padding: 10px 0;
+    border-bottom: 0.1px solid rgb(248, 239, 239);
+}
+
+li:hover {
+    color: rgb(247, 12, 12);
+
+}
+
+.service {
+    position: relative;
+}
+
+.sub_service {
+    position: absolute;
+    list-style: none;
+
+    top: 50px;
+    left: 30px;
+    height: fit-content;
+    width: 100px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    padding: 10px;
+    border-top: 3px solid rgb(159, 159, 167);
+    border-radius: 10px;
+    display: none;
+
+}
+
+.sub_service li {
+    padding: 10px 0;
+    border-bottom: 0.1px solid rgb(248, 239, 239);
+}
+
+.contact {
+    position: relative;
+}
+
+.sub_contact {
+    position: absolute;
+    list-style: none;
+
+    top: 50px;
+    left: 48px;
+    height: fit-content;
+    width: 100px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    padding: 10px;
+    border-top: 3px solid rgb(159, 159, 167);
+    border-radius: 10px;
+    display: none;
+
+}
+
+.sub_contact li {
+    padding: 10px 0;
+    border-bottom: 0.1px solid rgb(248, 239, 239);
+}
+/* code for hover */
+.icon{
+position: relative;
+
+}
+.card{
+    position: absolute;
+    top:60px;
+    right: 50px;
+    height: 350px;
+    width: 300px;
+    background-color: rgb(228, 238, 238);
+    border-radius: 5px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    display: none;
+}
+.icon:hover .card{
+    display: block;
+}
+.card h2{
+    text-align: center;
+    font-size: 25px;
+    padding: 30px;
+    background-color: rgb(179, 171, 171);
+    position: relative;
+}
+#first{
+position: absolute;
+top: 40px;
+right: 0;
+}
+.card img{
+    
+    width: 80px;
+    height: 80px;
+    border-radius: 50px;
+
+    position: absolute;
+    top:60px;
+     left: 50%;
+ 
+    transform: translateX(-50%); 
+}
+h4{
+
+    position: absolute;
+    top:160px;
+    left: 50%;
+ color: grey;
+    transform: translateX(-50%);
+  
+}
+ .para p{
+    position: absolute;
+    top:180px;
+    left: 50%;
+    color: gray;
+    transform: translateX(-50%);
+  
+}
+#second {
+    font-size: 10px;
+position: absolute;
+ right:100px;
+
+ color:white;
+ background-color:green ;
+ border-radius: 50px;
+ padding: 8px;
+
+}
+.keys{
+    position: absolute;
+    display: flex;
+    top:210px;
+  left: 50%;
+  transform: translateX(-50%);
+  color: gray;
+ 
+}
+.keys i{
+    margin: 0 5px;
+    padding: 8px;
+    border: 1px solid gray;
+    border-radius: 50px;
+}
